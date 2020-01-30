@@ -39,13 +39,16 @@ import static java.security.AccessController.getContext;
 
 public class RCTQRCodeLocalImage extends ReactContextBaseJavaModule {
     
-    private ReactApplicationContext mReactContext;
+    // private ReactApplicationContext mReactContext;
+
+    private Context context;
 
     private static final int RGB_MASK = 0x00FFFFFF;
 
     public RCTQRCodeLocalImage(ReactApplicationContext reactContext) {
         super(reactContext);
-        mReactContext = reactContext;
+        // mReactContext = reactContext;
+        this.context = context;
     }
 
     private static final String TAG = "QR";
